@@ -1,0 +1,49 @@
+.timer {
+    color: white;
+    background-color: black;
+    width: 100%;
+    font-family: Verdana;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.timer .timer__text {
+    font-size: 300%;
+}
+.timer .timer__container {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+.timer .timer__container .time__content {
+    font-size: 300%;
+    font-weight: 500;
+    margin: 5px;
+}
+.timer .timer__container .time__unit {
+    color: rgba(255, 255, 255, 0.575);
+    font-weight: 100;
+    margin: 5px;
+}
+.timer .timer__container:not(:last-child):before, .timer .timer__container:not(:last-child):after {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.3);
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -20px;
+}
+.timer .timer__container:not(:last-child):before {
+    top: 35%;
+}
+.timer .timer__container:not(:last-child):after {
+    top: 50%;
+}
+@media (max-width: 500px) {
+    .timer .timer__container:not(:last-child):before, .timer .timer__container:not(:last-child):after {
+        display: none;
+    }
+}
