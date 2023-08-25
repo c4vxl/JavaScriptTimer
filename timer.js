@@ -39,13 +39,24 @@ class timer {
         this.hoursElement.style.display = hours <= 0 ? "none" : "inline-block";
         this.minutesElement.style.display = minutes <= 0 ? "none" : "inline-block";
         this.secondsElement.style.display = seconds <= 0 ? "none" : "inline-block";
+
+        // display time units
+        this.yearsElement.querySelector(".time__unit").textContent = years === 1 ? "Year" : "Years";
+        this.monthsElement.querySelector(".time__unit").textContent = months === 1 ? "Month" : "Months";
+        this.weeksElement.querySelector(".time__unit").textContent = weeks === 1 ? "Week" : "Weeks";
+        this.daysElement.querySelector(".time__unit").textContent = days === 1 ? "Day" : "Days";
+        this.hoursElement.querySelector(".time__unit").textContent = hours === 1 ? "Hour" : "Hours";
+        this.minutesElement.querySelector(".time__unit").textContent = minutes === 1 ? "Minute" : "Minutes";
+        this.secondsElement.querySelector(".time__unit").textContent = seconds === 1 ? "Second" : "Seconds";
     }
 
     startCountdown(sec, overText = "over") {
         var seconds = sec;
-        this.interval = setInterval(() => {
-            this.displayTime(seconds = seconds - 1);
 
+        this.interval = setInterval(() => {
+            seconds = seconds - 1;
+            this.displayTime(seconds);
+        
             if (seconds === 0) {
                 this.displayText(overText);
             }
