@@ -14,37 +14,37 @@ This module allows you to create countdowns and countups with ease!
     <div class="timer__content">
         <div class="timer__container years">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Years</p>
+            <p class="timer__content time__unit"></p>
         </div>
 
         <div class="timer__container months">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Months</p>
+            <p class="timer__content time__unit"></p>
         </div>
 
         <div class="timer__container weeks">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Weeks</p>
+            <p class="timer__content time__unit"></p>
         </div>
         
         <div class="timer__container days">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Days</p>
+            <p class="timer__content time__unit"></p>
         </div>
 
         <div class="timer__container hours">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Hours</p>
+            <p class="timer__content time__unit"></p>
         </div>
         
         <div class="timer__container minutes">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Minutes</p>
+            <p class="timer__content time__unit"></p>
         </div>
 
         <div class="timer__container seconds">
             <p class="timer__content time__content"></p>
-            <p class="timer__content time__unit">Seconds</p>
+            <p class="timer__content time__unit"></p>
         </div>
     </div>
 </div>
