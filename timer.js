@@ -15,12 +15,12 @@ class timer {
         var seconds = sec;
         
         // calculate
-        var years = Math.round(seconds / 31536000), seconds = seconds % 31536000;
-        var months = Math.round(seconds / 2628000), seconds = seconds % 2628000;
-        var weeks = Math.round(seconds / 604800), seconds = seconds % 604800;
-        var days = Math.round(seconds / 86400), seconds = seconds % 86400;
-        var hours = Math.round(seconds / 3600), seconds = seconds % 3600;
-        var minutes = Math.round(seconds / 60), seconds = Math.round(seconds % 60);
+        var years = Math.floor(seconds / 31536000), seconds = seconds %= 31536000;
+        var months = Math.floor(seconds / 2628000), seconds = seconds %= 2628000;
+        var weeks = Math.floor(seconds / 604800), seconds = seconds %= 604800;
+        var days = Math.floor(seconds / 86400), seconds = seconds %= 86400;
+        var hours = Math.floor(seconds / 3600), seconds = seconds %= 3600;
+        var minutes = Math.floor(seconds / 60), seconds = Math.floor(seconds %= 60);
 
         // display
         this.yearsElement.querySelector(".time__content").textContent = years < 10 ? "0" + years : years;
